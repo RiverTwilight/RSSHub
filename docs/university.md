@@ -1125,7 +1125,7 @@ xskb1 对应 <http://www.auto.uestc.edu.cn/index/xskb1.htm>
 
 ### 本科生院工作通知
 
-<Route author="XYenon" example="/heu/ugs/news/jwc/jxap" path="/heu/ugs/news/:author?/:category?" :paramsDesc="['发布部门，默认为 `gztz`', '分类，默认为 `all`']">
+<Route author="XYenon" example="/hrbeu/ugs/news/jwc/jxap" path="/hrbeu/ugs/news/:author?/:category?" :paramsDesc="['发布部门，默认为 `gztz`', '分类，默认为 `all`']">
 
 author 列表：
 
@@ -1181,7 +1181,7 @@ category 列表：
 
 ### 研究生院
 
-<Route author="Derekmini XYenon" example="/heu/yjsy/list/2981" path="/heu/yjsy/list/:id" :paramsDesc="['栏目编号，由 `URL` 中获取。']" radar="1" rssbud="1">
+<Route author="Derekmini XYenon" example="/hrbeu/yjsy/list/2981" path="/hrbeu/yjsy/list/:id" :paramsDesc="['栏目编号，由 `URL` 中获取。']" radar="1" rssbud="1">
 
 | 通知公告 | 新闻动态 | 学籍注册 | 奖助学金 |  其他 |
 | :--: | :--: | :--: | :--: | :-: |
@@ -1191,7 +1191,7 @@ category 列表：
 
 ### 就业服务平台
 
-<Route author="Derekmini" example="/heu/job/list/tzgg" path="/heu/job/list/:id" :paramsDesc="['栏目，如下表']" radar="1" rssbud="1">
+<Route author="Derekmini" example="/hrbeu/job/list/tzgg" path="/hrbeu/job/list/:id" :paramsDesc="['栏目，如下表']" radar="1" rssbud="1">
 
 | 通知公告 | 热点新闻 |
 | :--: | :--: |
@@ -1201,19 +1201,19 @@ category 列表：
 
 #### 大型招聘会
 
-<Route author="Derekmini" example="/heu/job/bigemploy" path="/heu/job/bigemploy" radar="1" rssbud="1">
+<Route author="Derekmini" example="/hrbeu/job/bigemploy" path="/hrbeu/job/bigemploy" radar="1" rssbud="1">
 
 </Route>
 
 #### 今日招聘会
 
-<Route author="Derekmini" example="/heu/job/calendar" path="/heu/job/calendar" radar="1" rssbud="1">
+<Route author="Derekmini" example="/hrbeu/job/calendar" path="/hrbeu/job/calendar" radar="1" rssbud="1">
 
 </Route>
 
 ### 工学新闻
 
-<Route author="Derekmini XYenon" example="/heu/gx/list/xw/yw" path="/heu/gx/:type/:column/:id?" :paramsDesc="['页面类型，如 `新闻 - 要闻` 页面为 `list` 类型，`新闻 - 专题策划` 页面为 `card` 类型，通过直接观察页面来判断；','主栏，如 `新闻：xw`，由 `URL` 中获取；','次栏，如 `要闻：yw`，如果次栏存在，则为必选，由 `URL` 中获取。']" radar="1" rssbud="1">
+<Route author="Derekmini XYenon" example="/hrbeu/gx/list/xw/yw" path="/hrbeu/gx/:type/:column/:id?" :paramsDesc="['页面类型，如 `新闻 - 要闻` 页面为 `list` 类型，`新闻 - 专题策划` 页面为 `card` 类型，通过直接观察页面来判断；','主栏，如 `新闻：xw`，由 `URL` 中获取；','次栏，如 `要闻：yw`，如果次栏存在，则为必选，由 `URL` 中获取。']" radar="1" rssbud="1">
 
 |    新闻    |   新闻 - 要闻   |   新闻 - 专题策划   |  其他 |
 | :------: | :---------: | :-----------: | :-: |
@@ -1223,7 +1223,7 @@ category 列表：
 
 ### 水声工程学院
 
-<Route author="Derekmini" example="/heu/uae/list/3751" path="/heu/uae/list/:id" :paramsDesc="['栏目编号，由 `URL` 中获取。']" radar="1" rssbud="1">
+<Route author="Derekmini" example="/hrbeu/uae/list/3751" path="/hrbeu/uae/list/:id" :paramsDesc="['栏目编号，由 `URL` 中获取。']" radar="1" rssbud="1">
 
 | 新闻动态 | 通知公告 |  其他 |
 | :--: | :--: | :-: |
@@ -1817,6 +1817,14 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 </Route>
 
+### 校医院
+
+<Route author="ret-1" example="/nju/hospital" path="/nju/hospital" />
+
+### ITSC 信息中心
+
+<Route author="ret-1" example="/nju/itsc" path="/nju/itsc" />
+
 ## 南京工程学院
 
 ### 南京工程学院通知公告
@@ -1981,6 +1989,12 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 
 </Route>
 
+## 南京晓庄学院
+
+### 官网通知公告
+
+<Route author="real-jiakai" example="/njxzc/tzgg" path="/njxzc/tzgg" radar="1"/>
+
 ## 南京信息工程大学
 
 ::: tip 提示
@@ -2138,6 +2152,19 @@ jsjxy.hbut.edu.cn 证书链不全，自建 RSSHub 可设置环境变量 NODE_TLS
 | 招生工作 | 1959 |
 | 培养工作 | 1962 |
 | 学位工作 | 1958 |
+
+</Route>
+
+### 图书馆
+
+<Route author="evnydd0sf" example="/nua/lib/xwdt" path="/nua/lib/:type" :paramsDesc="['新闻模块，见下表']" radar="1">
+
+| 新闻模块 | 参数   |
+| ---- | ---- |
+| 新闻动态 | xwdt |
+| 党建动态 | djdt |
+| 资源动态 | zydt |
+| 服务动态 | fwdt |
 
 </Route>
 
