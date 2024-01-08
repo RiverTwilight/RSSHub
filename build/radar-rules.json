@@ -2805,6 +2805,20 @@
       }
     ]
   },
+  "backlinko.com": {
+    "_name": "Backlinko",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog#backlinko",
+        "source": [
+          "/blog",
+          "/"
+        ],
+        "target": "/backlinko/blog"
+      }
+    ]
+  },
   "bad.news": {
     "_name": "Bad.news",
     ".": [
@@ -4009,6 +4023,12 @@
         "title": "关键词",
         "docs": "https://docs.rsshub.app/routes/social-media#bluesky-bsky",
         "source": "/search"
+      },
+      {
+        "title": "Post",
+        "docs": "https://docs.rsshub.app/routes/social-media#bluesky-bsky",
+        "source": "/profile/:handle",
+        "target": "/bsky/profile/:handle"
       }
     ]
   },
@@ -9661,6 +9681,19 @@
       {
         "title": "FT 中文网",
         "docs": "https://docs.rsshub.app/routes/traditional-media#financial-times"
+      },
+      {
+        "title": "myFT 个人 RSS",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#financial-times"
+      }
+    ]
+  },
+  "ft.com": {
+    "_name": "Financial Times",
+    ".": [
+      {
+        "title": "myFT personal RSS",
+        "docs": "https://docs.rsshub.app/routes/en/traditional-media#financial-times"
       }
     ]
   },
@@ -10485,6 +10518,19 @@
           "/"
         ],
         "target": "/gocn/jobs"
+      }
+    ]
+  },
+  "gofans.cn": {
+    "_name": "GoFans",
+    ".": [
+      {
+        "title": "最新限免 / 促销应用",
+        "docs": "https://docs.rsshub.app/program-update#gofans",
+        "source": [
+          "/limited/:kind?",
+          "/"
+        ]
       }
     ]
   },
@@ -18878,6 +18924,27 @@
       }
     ]
   },
+  "lifeweek.com.cn": {
+    "_name": "三联生活周刊",
+    ".": [
+      {
+        "title": "栏目",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#san-lian-sheng-huo-zhou-kan",
+        "source": [
+          "/column/:channel"
+        ],
+        "target": "/lifeweek/channel/:channel"
+      },
+      {
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#san-lian-sheng-huo-zhou-kan",
+        "source": [
+          "/articleList/:tag"
+        ],
+        "target": "/lifeweek/tag/:tag"
+      }
+    ]
+  },
   "lightNovel.us": {
     "_name": "轻之国度",
     ".": [
@@ -19055,6 +19122,19 @@
           "/:channel",
           "/"
         ]
+      }
+    ]
+  },
+  "liveuamap.com": {
+    "_name": "Live Universal Awareness Map",
+    ".": [
+      {
+        "title": "Region",
+        "docs": "https://docs.rsshub.app/routes/new-media#live-universal-awareness-map",
+        "source": [
+          "/:region*"
+        ],
+        "target": "/liveuamap/:region"
       }
     ]
   },
@@ -19855,6 +19935,17 @@
         "docs": "https://docs.rsshub.app/routes/journal#MDPI",
         "source": "/journal/:journal",
         "target": "/mdpi/:journal"
+      }
+    ]
+  },
+  "medieval-china.club": {
+    "_name": "中国的中古",
+    ".": [
+      {
+        "title": "首页",
+        "docs": "https://docs.rsshub.app/routes/reading#zhong-guo-de-zhong-shou-ye",
+        "source": "/",
+        "target": "/medieval-china"
       }
     ]
   },
@@ -21184,6 +21275,307 @@
           "/papers"
         ],
         "target": "/nber/papers"
+      }
+    ]
+  },
+  "ncc-cma.net": {
+    "_name": "国家气候中心",
+    "cmdp": [
+      {
+        "title": "中国气温 - 日平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/RPJQWQYZ"
+      },
+      {
+        "title": "中国气温 - 近5天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ5TPJQWJP"
+      },
+      {
+        "title": "中国气温 - 近10天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TQWJP"
+      },
+      {
+        "title": "中国气温 - 近20天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TQWJP"
+      },
+      {
+        "title": "中国气温 - 近30天平均气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TQWJP"
+      },
+      {
+        "title": "中国气温 - 本月以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BYYLQWJP"
+      },
+      {
+        "title": "中国气温 - 本季以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLQWJP"
+      },
+      {
+        "title": "中国气温 - 本年以来气温距平",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BNYLQWJP"
+      },
+      {
+        "title": "中国降水 - 日降水量分布",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/QGRJSLFBT0808S"
+      },
+      {
+        "title": "中国降水 - 近5天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ5TJSLFBT"
+      },
+      {
+        "title": "中国降水 - 近10天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TJSL"
+      },
+      {
+        "title": "中国降水 - 近20天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TJSL"
+      },
+      {
+        "title": "中国降水 - 近30天降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TJSL"
+      },
+      {
+        "title": "中国降水 - 本月以来降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BYYLJSL"
+      },
+      {
+        "title": "中国降水 - 本季以来降水量",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLJSL"
+      },
+      {
+        "title": "中国降水 - 近10天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ10TJSLJP"
+      },
+      {
+        "title": "中国降水 - 近20天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ20TJSLJP"
+      },
+      {
+        "title": "中国降水 - 近30天降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/ZJ30TJSLJP"
+      },
+      {
+        "title": "中国降水 - 本月以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BYYLJSLJPZYQHZ"
+      },
+      {
+        "title": "中国降水 - 本季以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BJYLJSLJPZJQHZ"
+      },
+      {
+        "title": "中国降水 - 本年以来降水量距平百分率",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/BNYLJSLJP"
+      },
+      {
+        "title": "全球气温 - 气温距平（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana10_"
+      },
+      {
+        "title": "全球气温 - 气温距平（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana20_"
+      },
+      {
+        "title": "全球气温 - 气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana30_"
+      },
+      {
+        "title": "全球气温 - 气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmeana90_"
+      },
+      {
+        "title": "全球气温 - 最低气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmina30_"
+      },
+      {
+        "title": "全球气温 - 最低气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmina90_"
+      },
+      {
+        "title": "全球气温 - 最高气温距平（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmaxa30_"
+      },
+      {
+        "title": "全球气温 - 最高气温距平（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbtmaxa90_"
+      },
+      {
+        "title": "全球降水 - 降水量（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain10_"
+      },
+      {
+        "title": "全球降水 - 降水量（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain20_"
+      },
+      {
+        "title": "全球降水 - 降水量（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain30_"
+      },
+      {
+        "title": "全球降水 - 降水量（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbrain90_"
+      },
+      {
+        "title": "全球降水 - 降水距平百分率（最近10天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina10_"
+      },
+      {
+        "title": "全球降水 - 降水距平百分率（最近20天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina20_"
+      },
+      {
+        "title": "全球降水 - 降水距平百分率（最近30天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina30_"
+      },
+      {
+        "title": "全球降水 - 降水距平百分率（最近90天）",
+        "docs": "https://docs.rsshub.app/routes/forecast#guo-jia-qi-hou-zhong-xin-zui-xin-jian-ce",
+        "source": [
+          "/cn/index.htm"
+        ],
+        "target": "/ncc-cma/cmdp/image/glbraina90_"
       }
     ]
   },
@@ -22852,6 +23244,37 @@
       }
     ]
   },
+  "otobanana.com": {
+    "_name": "OTOBANANA",
+    ".": [
+      {
+        "title": "Timeline タイムライン",
+        "docs": "https://docs.rsshub.app/multimedia#otobanana",
+        "source": [
+          "/user/:id"
+        ],
+        "target": "/otobanana/user/:id"
+      },
+      {
+        "title": "Cast 音声投稿",
+        "docs": "https://docs.rsshub.app/multimedia#otobanana",
+        "source": [
+          "/user/:id/cast",
+          "/user/:id"
+        ],
+        "target": "/otobanana/user/:id/cast"
+      },
+      {
+        "title": "Livestream ライブ配信",
+        "docs": "https://docs.rsshub.app/multimedia#otobanana",
+        "source": [
+          "/user/:id/livestream",
+          "/user/:id"
+        ],
+        "target": "/otobanana/user/:id/livestream"
+      }
+    ]
+  },
   "ouc.edu.cn": {
     "_name": "中国海洋大学",
     "it": [
@@ -22967,6 +23390,18 @@
         "docs": "https://docs.rsshub.app/routes/new-media#panews-zhuan-ti",
         "source": "/",
         "target": "/panewslab/topic/:id"
+      }
+    ]
+  },
+  "papers.cool": {
+    "_name": "Cool Papers",
+    ".": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/journal#cool-papers-category",
+        "source": [
+          "/:category*"
+        ]
       }
     ]
   },
@@ -25888,16 +26323,15 @@
     "_name": "上海市教育考试院",
     "www": [
       {
-        "title": "消息速递",
-        "docs": "https://docs.rsshub.app/routes/other#shang-hai-shi-jiao-yu-kao-shi-yuan",
+        "title": "消息",
+        "docs": "https://docs.rsshub.app/routes/study#shang-hai-shi-jiao-yu-kao-shi-yuan",
         "source": [
-          "/"
-        ],
-        "target": "/shmeea"
+          "/page/:id?/index.html"
+        ]
       },
       {
         "title": "自学考试通知公告",
-        "docs": "https://docs.rsshub.app/routes/other#shang-hai-shi-jiao-yu-kao-shi-yuan",
+        "docs": "https://docs.rsshub.app/routes/study#shang-hai-shi-jiao-yu-kao-shi-yuan",
         "source": [
           "/page/04000/index.html",
           "/"
@@ -26837,6 +27271,16 @@
           "/jwc/:listId/list.htm"
         ],
         "target": "/sspu/jwc/:listId"
+      }
+    ],
+    "pe2016": [
+      {
+        "title": "体育部",
+        "docs": "https://docs.rsshub.app/university#shang-hai-di-er-gong-ye-da-xue-ti-yu-bu",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/sspu/pe/:id"
       }
     ]
   },
@@ -28784,10 +29228,121 @@
         "title": "Blog",
         "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
         "source": [
-          "/blog/:language",
-          "/"
+          "/blog/:language/"
         ],
-        "target": "/tradingview/blog"
+        "target": "/tradingview/blog/:language/"
+      },
+      {
+        "title": "Blog - Alerts",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/alerts/"
+        ],
+        "target": "/tradingview/blog/:language/category/alerts"
+      },
+      {
+        "title": "Blog - Bitcoin and Crypto",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/bitcoin-charts/"
+        ],
+        "target": "/tradingview/blog/:language/category/bitcoin-charts"
+      },
+      {
+        "title": "Blog - Business Updates",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/business-updates/"
+        ],
+        "target": "/tradingview/blog/:language/category/business-updates"
+      },
+      {
+        "title": "Blog - Charting",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/charts/"
+        ],
+        "target": "/tradingview/blog/:language/category/charts"
+      },
+      {
+        "title": "Blog - Charting Library",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/charting-library/"
+        ],
+        "target": "/tradingview/blog/:language/category/charting-library"
+      },
+      {
+        "title": "Blog - Data Feeds and Exchanges",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/data-feeds-exchanges/"
+        ],
+        "target": "/tradingview/blog/:language/category/data-feeds-exchanges"
+      },
+      {
+        "title": "Blog - Desktop",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/desktop/"
+        ],
+        "target": "/tradingview/blog/:language/category/desktop"
+      },
+      {
+        "title": "Blog - Market Analysis",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/market-analysis/"
+        ],
+        "target": "/tradingview/blog/:language/category/market-analysis"
+      },
+      {
+        "title": "Blog - Mobile",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/mobile/"
+        ],
+        "target": "/tradingview/blog/:language/category/mobile"
+      },
+      {
+        "title": "Blog - Pine Script®",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/pine/"
+        ],
+        "target": "/tradingview/blog/:language/category/pine"
+      },
+      {
+        "title": "Blog - Screener",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/stock-screener/"
+        ],
+        "target": "/tradingview/blog/:language/category/stock-screener"
+      },
+      {
+        "title": "Blog - Social",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/social/"
+        ],
+        "target": "/tradingview/blog/:language/category/social"
+      },
+      {
+        "title": "Blog - Trading and Brokerage",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/trading/"
+        ],
+        "target": "/tradingview/blog/:language/category/trading"
+      },
+      {
+        "title": "Blog - Widgets",
+        "docs": "https://docs.rsshub.app/routes/program-update#tradingview-blog",
+        "source": [
+          "/blog/:language/category/widgets/"
+        ],
+        "target": "/tradingview/blog/:language/category/widgets"
       }
     ]
   },
@@ -31644,6 +32199,224 @@
           "/author"
         ],
         "target": "/yicai/author/:id"
+      }
+    ],
+    "dt": [
+      {
+        "title": "DT 财经 - 可视化 - 全部",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/0"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 新流行",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/39"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 新趋势",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/40"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 商业黑马",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/41"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 新品",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/42"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 营销",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/43"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 大公司",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/44"
+      },
+      {
+        "title": "DT 财经 - 可视化 - 城市生活",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/visualization"
+        ],
+        "target": "/yicai/dt/visualization/45"
+      },
+      {
+        "title": "DT 财经 - 文章 - 全部",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/0"
+      },
+      {
+        "title": "DT 财经 - 文章 - 新流行",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/31"
+      },
+      {
+        "title": "DT 财经 - 文章 - 新趋势",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/32"
+      },
+      {
+        "title": "DT 财经 - 文章 - 商业黑马",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/33"
+      },
+      {
+        "title": "DT 财经 - 文章 - 新品",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/34"
+      },
+      {
+        "title": "DT 财经 - 文章 - 营销",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/35"
+      },
+      {
+        "title": "DT 财经 - 文章 - 大公司",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/36"
+      },
+      {
+        "title": "DT 财经 - 文章 - 城市生活",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/article"
+        ],
+        "target": "/yicai/dt/article/38"
+      },
+      {
+        "title": "DT 财经 - 报告 - 全部",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/0"
+      },
+      {
+        "title": "DT 财经 - 报告 - 人群观念",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/9"
+      },
+      {
+        "title": "DT 财经 - 报告 - 人群行为",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/22"
+      },
+      {
+        "title": "DT 财经 - 报告 - 美妆个护",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/23"
+      },
+      {
+        "title": "DT 财经 - 报告 - 3C数码",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/24"
+      },
+      {
+        "title": "DT 财经 - 报告 - 营销趋势",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/25"
+      },
+      {
+        "title": "DT 财经 - 报告 - 服饰鞋包",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/27"
+      },
+      {
+        "title": "DT 财经 - 报告 - 互联网",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/28"
+      },
+      {
+        "title": "DT 财经 - 报告 - 城市与居住",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/29"
+      },
+      {
+        "title": "DT 财经 - 报告 - 消费趋势",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/30"
+      },
+      {
+        "title": "DT 财经 - 报告 - 生活趋势",
+        "docs": "https://docs.rsshub.app/routes/traditional-media#di-yi-cai-jing-dt-cai-jing",
+        "source": [
+          "/report"
+        ],
+        "target": "/yicai/dt/report/37"
       }
     ]
   },

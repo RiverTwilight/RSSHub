@@ -582,6 +582,9 @@
         "TonyRL"
     ],
     "/babykingdom/:id/:order?": [],
+    "/backlinko/blog": [
+        "TonyRL"
+    ],
     "/bad/:path+": [
         "nczitzk"
     ],
@@ -975,6 +978,9 @@
     ],
     "/bsky/keyword/:keyword": [
         "untitaker"
+    ],
+    "/bsky/profile/:handle": [
+        "TonyRL"
     ],
     "/btzj/:category?": [
         "nczitzk"
@@ -2289,6 +2295,9 @@
         "HenryQW",
         "xyqfer"
     ],
+    "/ft/myft/:key": [
+        "HenryQW"
+    ],
     "/fudan/cce": [],
     "/fuliba/latest": [
         "shinemoon"
@@ -2531,6 +2540,9 @@
         "CcccFz"
     ],
     "/gocomics/:name": [],
+    "/gofans/:kind?": [
+        "HenryQW"
+    ],
     "/gogoanimehd/recent-releases": [
         "user4302"
     ],
@@ -4049,6 +4061,12 @@
         "auto-bot-ty"
     ],
     "/lifetimes/:category?": [],
+    "/lifeweek/channel/:channel": [
+        "changren-wcr"
+    ],
+    "/lifeweek/tag/:tag": [
+        "changren-wcr"
+    ],
     "/lightnovel/:keywords/:security_key?": [
         "nightmare-mio"
     ],
@@ -4104,6 +4122,9 @@
     ],
     "/liulinblog/tag/:id": [
         "nczitzk"
+    ],
+    "/liveuamap/:region?": [
+        "CoderSherlock"
     ],
     "/liyuan-forums/threads": [],
     "/liyuan-forums/threads/forum/:forum_id": [],
@@ -4286,6 +4307,9 @@
         "Derekmini"
     ],
     "/mediadigest/:range/:category?": [],
+    "/medieval-china": [
+        "artefaritaKuniklo"
+    ],
     "/medium/following/:user": [
         "ImSingee"
     ],
@@ -4520,6 +4544,9 @@
     ],
     "/nber/news": [
         "5upernova-heng"
+    ],
+    "/ncc-cma/cmdp/image/:id?": [
+        "nczitzk"
     ],
     "/ncepu/master/:type": [
         "nilleo"
@@ -5001,6 +5028,15 @@
     "/osu/packs/:type?": [
         "JimenezLi"
     ],
+    "/otobanana/user/:id": [
+        "TonyRL"
+    ],
+    "/otobanana/user/:id/cast": [
+        "TonyRL"
+    ],
+    "/otobanana/user/:id/livestream": [
+        "TonyRL"
+    ],
     "/ouc/it/:type?": [
         "GeoffreyChen777",
         "3401797899"
@@ -5049,6 +5085,9 @@
         "nczitzk"
     ],
     "/panewslab/topic/:id": [
+        "nczitzk"
+    ],
+    "/papers/:category?": [
         "nczitzk"
     ],
     "/paradigm/writing": [
@@ -5449,7 +5488,8 @@
     ],
     "/qutoutiao/category/:cid": [],
     "/qweather/3days/:location": [
-        "Rein-Ou"
+        "Rein-Ou",
+        "la3rence"
     ],
     "/qweather/now/:location": [
         "Rein-Ou"
@@ -5790,8 +5830,9 @@
         "gumibea",
         "TeamSUEP"
     ],
-    "/shmeea": [
-        "jialinghui"
+    "/shmeea/:id?": [
+        "jialinghui",
+        "Misaka13514"
     ],
     "/shmeea/self-study": [
         "h2ws"
@@ -6072,6 +6113,9 @@
     ],
     "/sspu/jwc/:listId": [
         "TonyRL"
+    ],
+    "/sspu/pe/:id?": [
+        "nczitzk"
     ],
     "/ssydt/article/:id?": [],
     "/startuplatte/:category?": [
@@ -6563,7 +6607,7 @@
     "/tprtc/cqzr": [],
     "/tprtc/news": [],
     "/tprtc/qyzc": [],
-    "/tradingview/blog/:language?": [
+    "/tradingview/blog/:language?/category/:category?": [
         "nczitzk"
     ],
     "/trakt/collection/:username/:type?": [],
@@ -7290,6 +7334,9 @@
     ],
     "/yicai/brief": [
         "sanmmm",
+        "nczitzk"
+    ],
+    "/yicai/dt/:column?/:category?": [
         "nczitzk"
     ],
     "/yicai/feed/:id?": [
