@@ -40,7 +40,7 @@ RSSHub supports two caching methods: memory and redis
 
 Partial routes have a strict anti-crawler policy, and can be configured to use proxy.
 
-Proxy can be configured through **Proxy URI**, **Proxy options**, or **Reverse proxy**.
+Proxy can be configured through **Proxy URI**, **Proxy options**, **PAC script**, or **Reverse proxy**.
 
 ### Proxy URI
 
@@ -95,6 +95,20 @@ async function handleRequest(request) {
   }
 }
 ```
+
+### PAC script
+
+:::warning
+
+This proxy method overwrites `PROXY_URI`, `PROXY_PROTOCOL`, `PROXY_HOST` and `PROXY_PORT`.
+
+:::
+
+About PAC script, please refer to [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file).
+
+`PAC_URI`: PAC script URL, supports http, https, ftp, file, data. See [pac-proxy-agent](https://www.npmjs.com/package/pac-proxy-agent) NPM package page.
+
+`PAC_SCRIPT`: Hard-coded JavaScript code string of PAC script. Overwrites `PAC_URI`.
 
 ### Proxy options
 
@@ -474,14 +488,11 @@ For user data related routes
 
 ### Twitter
 
-Given the recent changes in Twitter and its API access a new method for accessing Twitter anonymously was devised. This method involves using temporary guest accounts created when going through the onboarding process with the Android app.
+It is recommended to use a non-important account, new accounts or logins from different regions may be restricted.
 
-Please see the details in [Nitter - Guest Account Branch Deployment](https://github.com/zedeus/nitter/wiki/Guest-Account-Branch-Deployment) and [zedeus/nitter#983](https://github.com/zedeus/nitter/issues/983).
-
-In addition, we have prepared a Node.js script to help you use proxies to create these tokens in batches. [Please click here](https://github.com/DIYgod/RSSHub/tree/master/scripts/twitter-token/generate.js).
-
--   `TWITTER_OAUTH_TOKEN`: Support multiple keys, split them with `,`
--   `TWITTER_OAUTH_TOKEN_SECRET`: Support multiple keys, split them with `,`
+-   `TWITTER_USERNAME`: Twitter username
+-   `TWITTER_PASSWORD`: Twitter password
+-   `TWITTER_AUTHENTICATION_SECRET`: Optional, Twitter Two-factor authentication -> Authentication app -> Secret part in `otpauth://totp/Twitter:@_RSSHub?secret=xxxxxxxxxxxxxxxx&issuer=Twitter`
 
 ### Wordpress
 
@@ -558,6 +569,10 @@ Web 版认证 token 和 iOS 内购回执认证 token 只需选择其一填入即
 [申请地址](https://id.qweather.com/#/register?redirect=https%3A%2F%2Fconsole.qweather.com)
 
 -   `HEFENG_KEY`:API key
+
+### 米游社
+
+-   `MIHOYO_COOKIE`：登录米游社后的 cookie，用于获取用户关注动态时间线。
 
 ### 南方周末
 
